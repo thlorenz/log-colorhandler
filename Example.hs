@@ -1,6 +1,5 @@
 module Example where
 
-import System.Console.ANSI 
 import System.Log.Logger
 import System.Log.Handler.Color
 
