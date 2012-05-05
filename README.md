@@ -1,4 +1,4 @@
-# HSLoggerColorHandler
+# Log Color Handler
 
 ## What?
 
@@ -8,8 +8,8 @@ order to give colored log ouput in the terminal.
 
 ## Installation
 
-    git clone git://github.com/thlorenz/HSLoggerColorHandler.git
-    cd HSLoggerColorHandler
+    git clone git://github.com/thlorenz/log-colorhandler.git
+    cd log-colorhandler
     cabal install
 
 ## Try it!
