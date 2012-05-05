@@ -15,8 +15,9 @@ Cabal-version:       >=1.2
 Library
   Exposed-modules:     System.Log.Handler.Color
   
-  Build-depends:        ansi-terminal   >=0.5.5     &&  <0.6
-                    ,   hslogger        >=1.1.4     &&  <1.2    
+  Build-depends:      base 
+                    , ansi-terminal   >=0.5.5     &&  <0.6
+                    , hslogger        >=1.1.4     &&  <1.2    
   
   Other-modules:     Example
   

@@ -19,17 +19,11 @@ Works by activating ANSI color in its emit method which changes the color with w
 
 module System.Log.Handler.Color(colorHandler) where 
 
-import Prelude hiding (catch)
-import Control.Exception (SomeException, catch)
-import Data.Char (ord)
-
 import System.Console.ANSI 
 
 import System.Log
 import System.Log.Handler
 import System.Log.Formatter
-import System.IO
-import Control.Concurrent.MVar
 
 data ColorHandler   = ColorHandler { priority    :: Priority,
                                      formatter   :: LogFormatter ColorHandler }
@@ -58,6 +52,8 @@ instance LogHandler ColorHandler where
 
     close ch           = setSGR [ Reset ]
 
+{- | Activates a Color handler. 
+     Once it has been activated all messages logged to the terminal are colored according to Priority. -}
 colorHandler :: ColorHandler
 colorHandler = ColorHandler { priority = DEBUG, formatter = nullFormatter }
 
