@@ -30,9 +30,9 @@ data ColorHandler   = ColorHandler { priority    :: Priority,
 
 instance LogHandler ColorHandler where
     setLevel ch p      = ch { priority = p }
-    getLevel ch        = priority ch
+    getLevel           = priority
     setFormatter ch f  = ch { formatter = f }
-    getFormatter ch    = formatter ch
+    getFormatter       = formatter
     emit ch (p, msg) name = do
         case p of
             DEBUG     -> setSGR [ SetColor Foreground Dull White ]
