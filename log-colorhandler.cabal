@@ -1,7 +1,7 @@
-Name:                HSLoggerColorHandler
+Name:                log-colorhandler
 Version:             0.1
 Synopsis:            LogHandler for hslogger that enables colored output to terminal
-Homepage:            https://github.com/thlorenz/HSLoggerColorHandler
+Homepage:            https://github.com/thlorenz/log-colorhandler
 License:             BSD3
 License-file:        LICENSE
 Author:              Thorsten Lorenz
